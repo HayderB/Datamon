@@ -7,7 +7,7 @@ public class Monster
     public Species species;
 
     public Element currentElement;
-    public MonsterStats<int> currentStats;
+    public MonsterStats currentStats;
 
     public StatusEffect status;
 

@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public struct MonsterStats<T>
+public struct MonsterStats
 {
-    public T health;
-    public T stamina;
-    public T attack;
-    public T defense;
-    public T luck;
+    public int health;
+    public int stamina;
+    public int attack;
+    public int defense;
+    public int luck;
     
-    public T this[Stat stat] {
+    public int this[Stat stat] {
         get {
             switch(stat) {
                 case Stat.Health:   return health;

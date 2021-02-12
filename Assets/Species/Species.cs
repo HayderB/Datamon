@@ -7,7 +7,7 @@ public class Species : ScriptableObject
 {
     public Rarity rarity;
     public Element element;
-    public MonsterStats<int> baseStats;
+    public MonsterStats baseStats;
 
     [System.Serializable]
     public struct AbilitySlot {
