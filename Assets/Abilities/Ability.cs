@@ -6,6 +6,7 @@ using UnityEngine;
 public class Ability : ScriptableObject
 {
     public Element element;
+    public int staminaCost = 1;
     public int minDamage = 0;
     public int maxDamage = 0;
     public SpecialEffect special;
