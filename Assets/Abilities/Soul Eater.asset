@@ -17,4 +17,4 @@ MonoBehaviour:
   minDamage: 30
   maxDamage: 30
   special: {fileID: 0}
-  specialChance: 1
+  specialChance: 0

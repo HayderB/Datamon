@@ -16,5 +16,5 @@ MonoBehaviour:
   staminaCost: 5
   minDamage: 5
   maxDamage: 10
-  special: {fileID: 0}
-  specialChance: 1
+  special: {fileID: 11400000, guid: bb8f05e442fd4f043b4547ef687fd452, type: 2}
+  specialChance: 0.75

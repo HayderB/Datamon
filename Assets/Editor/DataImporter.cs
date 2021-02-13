@@ -24,6 +24,8 @@ public class DataImporter : ScriptableObject
         //Import abilities
         var abilities = ImportAbilities(excel, elements);
 
+        //Import monster spiecies
+        var monsters = ImportMonsterSpecies(excel, elements, abilities);
 
         MarkChangesForSaving(this);
         lastImportTime = System.DateTime.Now.ToString();
@@ -40,6 +42,7 @@ public class DataImporter : ScriptableObject
         }
 
         var assets = GetAllAssetsOfType<Ability>();
+        var specials = GetAllAssetsOfType<SpecialEffect>();
         int originalCount = assets.Count;
 
         int nonBlankCount = 0;
@@ -60,6 +63,21 @@ public class DataImporter : ScriptableObject
                 Debug.LogError($"Invalid element name {elementName} used by ability {name}.");
             }
 
+            string specialName = table.GetValue<string>(row, "Special Effect");
+            if (string.IsNullOrWhiteSpace(specialName) || !specials.TryGetValue(specialName, out SpecialEffect special))
+            {
+                if (!string.IsNullOrWhiteSpace(specialName))
+                {
+                    Debug.LogError($"Special effect {specialName} used by ability {name} was not found.");
+
+                    ability.special = null;
+                    ability.specialChance = 0;
+                } 
+            } else
+            {
+                ability.special = special;
+                ability.specialChance = table.GetValue<float>(row, "Effect Chance");
+            }
 
             ability.staminaCost = table.GetValue<int>(row, "Stamina Cost");
             ability.minDamage = table.GetValue<int>(row, "Min Damage");
@@ -69,6 +87,49 @@ public class DataImporter : ScriptableObject
         return assets;
     }
 
+    Dictionary<string, Species> ImportMonsterSpecies(ExcelImporter excel, Dictionary<string, Element> elements, Dictionary<string, Ability> abilities)
+    {
+        if (!excel.TryGetTable("Monsters", out ExcelImporter.Table table))
+        {
+            throw new System.IO.InvalidDataException($"No Monsters table was found.");
+        }
+
+        var assets = GetAllAssetsOfType<Species>();
+        int originalCount = assets.Count;
+
+        for (int row = 1; row <= table.RowCount; row++)
+        {
+            string name = table.GetValue<string>(row, "Name");
+            if (string.IsNullOrWhiteSpace(name)) continue;
+
+            var monter = GetOrCreateAsset(name, assets, "Species");
+
+            string rarityName = table.GetValue<string>(row, "Rarity");
+            if (!System.Enum.TryParse(rarityName, out monter.rarity))
+            {
+                Debug.LogError($"Unknown rarity {rarityName} used by monster species {name}.");
+            }
+
+            string elementName = table.GetValue<string>(row, "Element");
+            if (!elements.TryGetValue(elementName, out monter.element))
+            {
+                Debug.LogError($"Element {elementName} used by monsyer {name} was not found.");
+            }
+
+            monter.baseStats.health = table.GetValue<int>(row, "Health");
+            monter.baseStats.stamina = table.GetValue<int>(row, "Stamina");
+            monter.baseStats.attack = table.GetValue<int>(row, "Attack");
+            monter.baseStats.defense = table.GetValue<int>(row, "Defense");
+            monter.baseStats.luck = table.GetValue<int>(row, "Luck");
+
+            monter.abilities[0] = SetAbility(row, 1, table, abilities);
+            monter.abilities[1] = SetAbility(row, 2, table, abilities);
+
+            monter.OnValidate();
+        }
+        Debug.Log($"Successfully imported {table.RowCount} monsters: ({assets.Count - originalCount} new, {assets.Count - table.RowCount} unused)");
+        return assets;
+    }
 
 
     void MarkChangesForSaving(Object target)
