@@ -13,43 +13,73 @@ MonoBehaviour:
   m_Name: Elements
   m_EditorClassIdentifier: 
   _elementTable:
-  - name: Normal
-    element: {fileID: 11400000, guid: 7f00f6faba8f65443801d5d5eeda6b42, type: 2}
+  - name: Human
+    element: {fileID: 11400000, guid: a12d6432855df1d42be1c9a629a19c19, type: 2}
     attackMultipliers:
     - 1
+    - 0.8
+    - 2
+    - 0.5
     - 1
+    - 1.5
     - 1
-    - 1
-    - 1
-  - name: Kitten
-    element: {fileID: 11400000, guid: b923712d4d5412642a12cc10846858ac, type: 2}
+  - name: Witch
+    element: {fileID: 11400000, guid: 84c89259e1d437945ba2bf47b9ac35b3, type: 2}
     attackMultipliers:
+    - 2
     - 1
+    - 0.8
+    - 1
+    - 1
+    - 1.5
+    - 0.8
+  - name: Zombie
+    element: {fileID: 11400000, guid: 301f1b711c806164da1a69e10f1d931f, type: 2}
+    attackMultipliers:
     - 0.5
     - 2
     - 1
-    - 0.5
-  - name: Yarn
-    element: {fileID: 11400000, guid: 52c29cd402c523e4699e495ae5cadf18, type: 2}
+    - 2
+    - 0.8
+    - 1
+    - 1.5
+  - name: Cat
+    element: {fileID: 11400000, guid: aaefed6e305bd9343a4ccbe1ad824447, type: 2}
+    attackMultipliers:
+    - 2
+    - 1
+    - 2
+    - 1
+    - 1.5
+    - 0.8
+    - 1
+  - name: Vampire
+    element: {fileID: 11400000, guid: 9a52b699b06b7b349929fa9be7418895, type: 2}
     attackMultipliers:
     - 1
-    - 0.5
-    - 0.5
     - 1
     - 2
-  - name: Hotsauce
-    element: {fileID: 11400000, guid: 34cc93436229a65409f9afcae3efc66f, type: 2}
+    - 0.8
+    - 1
+    - 0.8
+    - 2
+  - name: Spooky
+    element: {fileID: 11400000, guid: fc10aa10d922e474591c7850eb0a25a5, type: 2}
+    attackMultipliers:
+    - 0.8
+    - 0.8
+    - 1
+    - 2
+    - 2
+    - 1
+    - 0.8
+  - name: Shifter
+    element: {fileID: 11400000, guid: 55bc52fa2d9382a45ba41896be242d65, type: 2}
     attackMultipliers:
     - 1
     - 2
-    - 0
+    - 0.8
     - 1
+    - 0.8
     - 2
-  - name: Snowball
-    element: {fileID: 11400000, guid: 8415987415323354f914f3adc43761ae, type: 2}
-    attackMultipliers:
     - 1
-    - 2
-    - 2.5
-    - 1
-    - 0.5

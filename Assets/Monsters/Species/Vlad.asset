@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b250244e578878408a305a90770d6a7, type: 3}
+  m_Name: Vlad
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  rarity: 1
+  element: {fileID: 11400000, guid: 9a52b699b06b7b349929fa9be7418895, type: 2}
+  baseStats:
+    health: 120
+    stamina: 100
+    attack: 20
+    defense: 55
+    luck: 60
+  abilities:
+  - name: Ghost
+    ability: {fileID: 11400000, guid: 128bf9c91002fbc4cbb5d5dd06758ef3, type: 2}
+    chanceToUse: 0.25
+  - name: Tackle
+    ability: {fileID: 11400000, guid: e924e949aeecece46bcaecd792c507b5, type: 2}
+    chanceToUse: 0.75

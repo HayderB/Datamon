@@ -13,8 +13,55 @@ MonoBehaviour:
   m_Name: Species
   m_EditorClassIdentifier: 
   species:
+  - {fileID: 11400000, guid: 0cfff2e24906d5d45a098fd80068d438, type: 2}
+  - {fileID: 11400000, guid: c98073ebd4853fe4384c16c8c3a95f52, type: 2}
+  - {fileID: 11400000, guid: 08570003c680a4049bcd0d95b8c2936f, type: 2}
+  - {fileID: 11400000, guid: 36abea344e406ce4fbe595bca677839e, type: 2}
+  - {fileID: 11400000, guid: 9e64b991558b6b54b9156d53967adfff, type: 2}
+  - {fileID: 11400000, guid: 902fc484452036849a42edd4bf4066da, type: 2}
   - {fileID: 11400000, guid: 84aeca0ba55b4b34a940bbaa02a1c3ab, type: 2}
+  - {fileID: 11400000, guid: e15cb525e8a7853458c4b4351863dd18, type: 2}
+  - {fileID: 11400000, guid: 0fdcb973e6bb87b49806b47266cdcf5b, type: 2}
   - {fileID: 11400000, guid: 189ce655f4ff4eb41832b76a146f74a3, type: 2}
   - {fileID: 11400000, guid: c964e6331ce853941ae78d3449a11a03, type: 2}
+  - {fileID: 11400000, guid: e976a334e1d04144ba55a107de20ef6d, type: 2}
+  - {fileID: 11400000, guid: 948db1adbabf6fc4f81da3d894bc06d0, type: 2}
+  - {fileID: 11400000, guid: 07abc91183ff15e40bf8a11b1669a700, type: 2}
   - {fileID: 11400000, guid: bf9e190c2245a1d408c095c94bcab3c0, type: 2}
   - {fileID: 11400000, guid: 041b61187d756fa4aba66ea30131a229, type: 2}
+  - {fileID: 11400000, guid: aa7abd53c5f1fa9468eccd6889b89fd8, type: 2}
+  dropDownItems:
+  - m_Text: Archna
+    m_Image: {fileID: 21300000, guid: 3c10e5e11ada1954a94b9df16cdf6515, type: 3}
+  - m_Text: Blackbeard
+    m_Image: {fileID: 21300000, guid: 96f9c424f22807f49bc0d64ce2f7e650, type: 3}
+  - m_Text: Crimson
+    m_Image: {fileID: 21300000, guid: de37828a1a48db0459261cfb88372518, type: 3}
+  - m_Text: Damien
+    m_Image: {fileID: 21300000, guid: 49335fc969c51d046a41b1dc0eee0fac, type: 3}
+  - m_Text: Endeavour
+    m_Image: {fileID: 21300000, guid: 2f79cf6ad02413b479edc683ac53b1d6, type: 3}
+  - m_Text: Frankie
+    m_Image: {fileID: 21300000, guid: 8ec10d33c5b27ef4489018694306b3ad, type: 3}
+  - m_Text: Frosty
+    m_Image: {fileID: 21300000, guid: ad4e719ca8fe0b8479d2351dd03a4492, type: 3}
+  - m_Text: Gargantua
+    m_Image: {fileID: 21300000, guid: bdd8e0f55ed5b9445951d5d8b36394b1, type: 3}
+  - m_Text: Hades
+    m_Image: {fileID: 21300000, guid: 7062b7803cdec5244b71ce41beb55823, type: 3}
+  - m_Text: Mittens
+    m_Image: {fileID: 21300000, guid: 61f9d2eec834a4d4daa84ebd72b4c844, type: 3}
+  - m_Text: Normie
+    m_Image: {fileID: 21300000, guid: 30dc0dc86d2f6e1419a085a087194c83, type: 3}
+  - m_Text: Phantom
+    m_Image: {fileID: 21300000, guid: e24127d201024264492a9b53cdaa754a, type: 3}
+  - m_Text: Ripper
+    m_Image: {fileID: 21300000, guid: 369019d5b87fa6e4288d09ab1f50a79e, type: 3}
+  - m_Text: Skull
+    m_Image: {fileID: 21300000, guid: 65b793039af150044a5397eb1404dd48, type: 3}
+  - m_Text: Sweater
+    m_Image: {fileID: 21300000, guid: 8def011b0a1dc8047b962eaf39a37d9b, type: 3}
+  - m_Text: Tabasco
+    m_Image: {fileID: 21300000, guid: 369019d5b87fa6e4288d09ab1f50a79e, type: 3}
+  - m_Text: Vlad
+    m_Image: {fileID: 21300000, guid: 5e2f750cdc27d784185230ad9c0c4658, type: 3}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b250244e578878408a305a90770d6a7, type: 3}
+  m_Name: Ripper
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  rarity: 1
+  element: {fileID: 11400000, guid: fc10aa10d922e474591c7850eb0a25a5, type: 2}
+  baseStats:
+    health: 120
+    stamina: 90
+    attack: 100
+    defense: 18
+    luck: 70
+  abilities:
+  - name: Claw
+    ability: {fileID: 11400000, guid: 0ec455f9a97974340a1023c17156a0c0, type: 2}
+    chanceToUse: 0.75
+  - name: 'Jigsaw '
+    ability: {fileID: 11400000, guid: f0a6f96738449e843989ad25ca2a9dcb, type: 2}
+    chanceToUse: 0.25

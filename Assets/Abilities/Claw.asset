@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aef861351c575f34e9b7442f168bb4fe, type: 3}
-  m_Name: Tackle
+  m_Name: Claw
   m_EditorClassIdentifier: 
-  element: {fileID: 11400000, guid: a12d6432855df1d42be1c9a629a19c19, type: 2}
+  element: {fileID: 11400000, guid: 301f1b711c806164da1a69e10f1d931f, type: 2}
   staminaCost: 5
-  minDamage: 4
+  minDamage: 5
   maxDamage: 10
-  special: {fileID: 11400000, guid: c23d22d0cd0b87b4e98d0c6888798a1f, type: 2}
-  specialChance: 0.65
+  special: {fileID: 11400000, guid: bb8f05e442fd4f043b4547ef687fd452, type: 2}
+  specialChance: 0.75

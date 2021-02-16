@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aef861351c575f34e9b7442f168bb4fe, type: 3}
-  m_Name: Tackle
+  m_Name: 'Jigsaw '
   m_EditorClassIdentifier: 
   element: {fileID: 11400000, guid: a12d6432855df1d42be1c9a629a19c19, type: 2}
-  staminaCost: 5
-  minDamage: 4
-  maxDamage: 10
-  special: {fileID: 11400000, guid: c23d22d0cd0b87b4e98d0c6888798a1f, type: 2}
-  specialChance: 0.65
+  staminaCost: 6
+  minDamage: 10
+  maxDamage: 25
+  special: {fileID: 11400000, guid: 2a7de25b73f4f4543b626b592b5de50d, type: 2}
+  specialChance: 0.5

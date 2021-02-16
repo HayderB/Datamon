@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b250244e578878408a305a90770d6a7, type: 3}
+  m_Name: Crimson
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  rarity: 1
+  element: {fileID: 11400000, guid: 55bc52fa2d9382a45ba41896be242d65, type: 2}
+  baseStats:
+    health: 120
+    stamina: 50
+    attack: 90
+    defense: 50
+    luck: 50
+  abilities:
+  - name: Candy
+    ability: {fileID: 11400000, guid: 5ada65f8018f3374f9868175367f1256, type: 2}
+    chanceToUse: 0.1
+  - name: 'Hammon '
+    ability: {fileID: 11400000, guid: 04f4ab6981371af48bbe45d9bbd8893a, type: 2}
+    chanceToUse: 0.9

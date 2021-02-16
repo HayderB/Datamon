@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b250244e578878408a305a90770d6a7, type: 3}
+  m_Name: Phantom
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  rarity: 0
+  element: {fileID: 11400000, guid: fc10aa10d922e474591c7850eb0a25a5, type: 2}
+  baseStats:
+    health: 80
+    stamina: 80
+    attack: 50
+    defense: 60
+    luck: 40
+  abilities:
+  - name: Beam
+    ability: {fileID: 11400000, guid: c4bba376178527d4dba23cf1b6d22716, type: 2}
+    chanceToUse: 0.1
+  - name: 'Hammon '
+    ability: {fileID: 11400000, guid: 04f4ab6981371af48bbe45d9bbd8893a, type: 2}
+    chanceToUse: 0.9

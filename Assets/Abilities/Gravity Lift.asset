@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aef861351c575f34e9b7442f168bb4fe, type: 3}
-  m_Name: Tackle
+  m_Name: Gravity Lift
   m_EditorClassIdentifier: 
-  element: {fileID: 11400000, guid: a12d6432855df1d42be1c9a629a19c19, type: 2}
-  staminaCost: 5
-  minDamage: 4
+  element: {fileID: 11400000, guid: 55bc52fa2d9382a45ba41896be242d65, type: 2}
+  staminaCost: 2
+  minDamage: 5
   maxDamage: 10
-  special: {fileID: 11400000, guid: c23d22d0cd0b87b4e98d0c6888798a1f, type: 2}
-  specialChance: 0.65
+  special: {fileID: 11400000, guid: 374b5d99f96c01d4e93f70f7181dce65, type: 2}
+  specialChance: 0.25

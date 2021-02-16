@@ -2669,8 +2669,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1058252926}
   m_HandleRect: {fileID: 1058252925}
   m_Direction: 2
-  m_Value: 0.99997205
-  m_Size: 0.89056134
+  m_Value: 0.9999958
+  m_Size: 0.26654124
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2859,6 +2859,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1229066717}
     m_Modifications:
+    - target: {fileID: 771784300844354488, guid: 6ed9278372a2011419564cf89ad8ccda,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771784300844354488, guid: 6ed9278372a2011419564cf89ad8ccda,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771784300844354488, guid: 6ed9278372a2011419564cf89ad8ccda,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771784300844354488, guid: 6ed9278372a2011419564cf89ad8ccda,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771784300913257948, guid: 6ed9278372a2011419564cf89ad8ccda,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771784300913257948, guid: 6ed9278372a2011419564cf89ad8ccda,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 771784301255638145, guid: 6ed9278372a2011419564cf89ad8ccda,
         type: 3}
       propertyPath: m_Name
@@ -2974,6 +3004,16 @@ PrefabInstance:
       propertyPath: OnPartyChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1229066720}
+    - target: {fileID: 771784301296032113, guid: 6ed9278372a2011419564cf89ad8ccda,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771784301296032113, guid: 6ed9278372a2011419564cf89ad8ccda,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 771784302625379762, guid: 6ed9278372a2011419564cf89ad8ccda,
         type: 3}
       propertyPath: m_AnchorMax.x
