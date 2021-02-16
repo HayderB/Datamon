@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f66520f47b1cfe94e8c7dc63a3335840, type: 3}
   m_Name: Counter
   m_EditorClassIdentifier: 
-  incomingDamage: 2
-  incomingEffects: 0
+  priorityOrder: 0
+  impactOnHealth: 2
+  impactOnStamina: 0
+  impactOnAttack: 0
+  impactOnDefense: 0
+  impactOnLuck: 0
+  specialImpacts: 0

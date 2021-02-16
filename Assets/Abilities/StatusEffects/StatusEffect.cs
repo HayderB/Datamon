@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class StatusEffect : ScriptableObject
 {
@@ -15,5 +13,19 @@ public class StatusEffect : ScriptableObject
 
     public virtual void RemoveFrom(Monster target) {
         target.status = null;
+    }
+
+    public virtual bool TryModifyRolledAbilities(BattleSide side, System.Random dice) {
+        return false;
+    }
+
+    public virtual bool TryPersistAtEndOfRound(BattleSide side, System.Random dice) {
+
+        if (dice.NextDouble() < chanceToWearOff) {
+            RemoveFrom(side.currentMonster);
+            return false;
+        }
+
+        return true;
     }
 }

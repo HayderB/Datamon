@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Lucky
   m_EditorClassIdentifier: 
   statToModify: 4
-  multiplier: 1.2
+  changeRatio: 0.2
+  changeAbsolute: 0
   applyToSelf: 1

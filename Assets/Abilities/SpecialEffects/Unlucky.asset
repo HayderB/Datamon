@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Unlucky
   m_EditorClassIdentifier: 
   statToModify: 4
-  multiplier: 0.8
+  changeRatio: -0.2
+  changeAbsolute: 0
   applyToSelf: 0

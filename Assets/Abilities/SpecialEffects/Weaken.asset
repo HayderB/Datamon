@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Weaken
   m_EditorClassIdentifier: 
   statToModify: 2
-  multiplier: 0.9
+  changeRatio: -0.1
+  changeAbsolute: 0
   applyToSelf: 0

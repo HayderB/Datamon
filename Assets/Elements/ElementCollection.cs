@@ -1,14 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Elements.asset", menuName = "DataMon/Elements Collection")]
 public class ElementCollection : ScriptableObject
 {
+    public static ElementCollection Instance { get; private set; }
+
     [System.Serializable]
     struct ElementRow {
+#if UNITY_EDITOR
+        [HideInInspector]
+        public string name;
+#endif
         public Element element;
         public float[] attackMultipliers;
+
+        public ElementRow(Element element, float[] attackMultipliers) {
+            this.element = element;
+            this.attackMultipliers = attackMultipliers;
+            #if UNITY_EDITOR
+            name = element.name;
+            #endif
+        }
     }
 
     [SerializeField]
@@ -22,11 +35,14 @@ public class ElementCollection : ScriptableObject
     }
 
     public void SetElement(int id, Element element, float[] attackMultipliers) {
-        _elementTable[id] = new ElementRow { element = element, attackMultipliers = (float[])attackMultipliers.Clone()};
+        _elementTable[id] = new ElementRow(element, (float[])attackMultipliers.Clone());
     }
 
     private void OnEnable() {
         if (_elementTable == null) return;
+
+        Instance = this;
+
         _elementIndex = new Dictionary<Element, int>(_elementTable.Length);
         for (int i = 0; i < _elementTable.Length; i++)
             _elementIndex.Add(_elementTable[i].element, i);

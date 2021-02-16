@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ca06c2f7efc2b419e87112bce986b4, type: 3}
+  m_Name: DataImporter
+  m_EditorClassIdentifier: 
+  sourceFilePath: Editor/DataMon-EndOfClassVersion.xlsx
+  elementCollection: {fileID: 11400000, guid: 64d719c62876d7541a6b739343429a2b, type: 2}
+  speciesCollection: {fileID: 11400000, guid: 392618984b9bbd64bba590089f17a36f, type: 2}
+  lastImport: 2021-02-14 9:03:06 AM

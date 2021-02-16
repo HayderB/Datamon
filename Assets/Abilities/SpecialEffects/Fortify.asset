@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Fortify
   m_EditorClassIdentifier: 
   statToModify: 3
-  multiplier: 1.1
+  changeRatio: 0.1
+  changeAbsolute: 0
   applyToSelf: 1

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b256602e73a5c55428794ecb5a4e92c0, type: 3}
   m_Name: Copycat
   m_EditorClassIdentifier: 
-  priorityOrder: 0
+  priorityOrder: -1

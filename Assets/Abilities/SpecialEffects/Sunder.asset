@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Sunder
   m_EditorClassIdentifier: 
   statToModify: 3
-  multiplier: 0.9
+  changeRatio: -0.1
+  changeAbsolute: 0
   applyToSelf: 0

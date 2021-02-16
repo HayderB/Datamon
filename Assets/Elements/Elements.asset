@@ -13,66 +13,43 @@ MonoBehaviour:
   m_Name: Elements
   m_EditorClassIdentifier: 
   _elementTable:
-  - element: {fileID: 11400000, guid: 3ff815cb648e2d34c887e14eb0d1ecd3, type: 2}
+  - name: Normal
+    element: {fileID: 11400000, guid: 7f00f6faba8f65443801d5d5eeda6b42, type: 2}
     attackMultipliers:
     - 1
-    - 0.8
-    - 2
-    - 0.5
     - 1
-    - 1.5
     - 1
-  - element: {fileID: 11400000, guid: 8f1b5e3a470b5ce45ae868f86ea9792d, type: 2}
+    - 1
+    - 1
+  - name: Kitten
+    element: {fileID: 11400000, guid: b923712d4d5412642a12cc10846858ac, type: 2}
     attackMultipliers:
-    - 2
     - 1
-    - 0.8
-    - 1
-    - 1
-    - 1.5
-    - 0.8
-  - element: {fileID: 11400000, guid: c4379211542f18548b5c219515886b53, type: 2}
-    attackMultipliers:
     - 0.5
     - 2
     - 1
-    - 2
-    - 0.8
-    - 1
-    - 1.5
-  - element: {fileID: 11400000, guid: d3198a47908fdb7478754448d580205e, type: 2}
-    attackMultipliers:
-    - 2
-    - 1
-    - 2
-    - 1
-    - 1.5
-    - 0.8
-    - 1
-  - element: {fileID: 11400000, guid: 705a50a1006cec24f8a8d8cac522706c, type: 2}
+    - 0.5
+  - name: Yarn
+    element: {fileID: 11400000, guid: 52c29cd402c523e4699e495ae5cadf18, type: 2}
     attackMultipliers:
     - 1
+    - 0.5
+    - 0.5
     - 1
     - 2
-    - 0.8
-    - 1
-    - 0.8
-    - 2
-  - element: {fileID: 11400000, guid: debb07640aa755b48826f94bcc79f87a, type: 2}
-    attackMultipliers:
-    - 0.8
-    - 0.8
-    - 1
-    - 2
-    - 2
-    - 1
-    - 0.8
-  - element: {fileID: 11400000, guid: 146d419c0894a2a4ba901bcff9398d7f, type: 2}
+  - name: Hotsauce
+    element: {fileID: 11400000, guid: 34cc93436229a65409f9afcae3efc66f, type: 2}
     attackMultipliers:
     - 1
     - 2
-    - 0.8
+    - 0
     - 1
-    - 0.8
     - 2
+  - name: Snowball
+    element: {fileID: 11400000, guid: 8415987415323354f914f3adc43761ae, type: 2}
+    attackMultipliers:
     - 1
+    - 2
+    - 2.5
+    - 1
+    - 0.5

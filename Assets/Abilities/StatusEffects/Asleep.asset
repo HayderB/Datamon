@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Asleep
   m_EditorClassIdentifier: 
   chanceToWearOff: 0.5
-  chanceOfNoAction: 0
+  chanceOfNoAction: 1
   chanceToAttackSelf: 0
